@@ -141,7 +141,7 @@ h3 {
 
 .aprendizado > p {
   display: block;
-  max-width: 50%;
+  max-width: 60vw;
   margin: 0 auto;
   font-weight: bold;
   font-size: 1.5rem;
@@ -160,6 +160,13 @@ h3 {
     width: 90%;
     padding: 0;
     margin: 0;
+  }
+
+  .aprendizado {
+    width: 100%;
+  }
+  .aprendizado > p {
+    width: 100%;
   }
 }
 
@@ -189,5 +196,12 @@ h3 {
 
   p.preco--novo {
     font-size: 1.5rem;
+  }
+
+  .aprendizado {
+    max-width: 90%;
+  }
+  .aprendizado > p {
+    max-width: 100%;
   }
 }
