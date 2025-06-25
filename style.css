@@ -4,7 +4,10 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  color: #fff;
+}
+
+html {
+  font-size: 18px;
 }
 
 body {
@@ -114,6 +117,23 @@ p.preco--novo {
   max-width: 80%;
   margin: 0 auto;
   text-align: center;
+}
+
+.piscando {
+  animation: piscar 2s infinite;
+}
+
+/* Animação */
+@keyframes piscar {
+  0%,
+  100% {
+    color: #c469f2; /* Cor original */
+  }
+  50% {
+    color: #ff007b; /* Cor de destaque no meio do ciclo */
+    transform: scale(1.1);
+    font-weight: bold;
+  }
 }
 
 .aprender__container {
@@ -256,6 +276,9 @@ footer {
   align-items: center;
 }
 
+footer a {
+  color: #fff;
+}
 footer nav ul {
   display: flex;
   gap: 30px;
@@ -273,6 +296,9 @@ footer .socials img {
 }
 
 @media (max-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
   .header__container {
     flex-direction: column-reverse;
     gap: 30px;
