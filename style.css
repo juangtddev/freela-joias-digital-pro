@@ -33,7 +33,7 @@ header {
   background-color: #ff007b;
   padding: 12px 24px;
   border-radius: 20px;
-  font-size: 24px;
+  font-size: 1rem;
 }
 
 .header__container {
@@ -146,6 +146,74 @@ h3 {
   font-weight: bold;
   font-size: 1.5rem;
   color: #ffea00;
+}
+
+/* Seção de aula grátis */
+.aula {
+  background-image: url("assets/img/bg_2.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 100px 0;
+}
+
+.aula h2 {
+  color: #ff007b;
+}
+
+.aula p {
+  color: #fff;
+}
+
+.video {
+  padding: 50px 0;
+  width: 90%;
+  text-align: center;
+}
+
+iframe {
+  aspect-ratio: 2/1;
+  width: 60%;
+}
+
+/* Seção Garantia */
+
+.garantia {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 100px auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.garantia__img {
+  max-width: 90%;
+}
+
+.garantia__img img {
+  width: 100%;
+}
+
+.garantia__texto {
+  color: #ff007b;
+  max-width: 90%;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2.625rem;
+  text-align: center;
+}
+
+.garantia__texto span {
+  font-size: 8rem;
+}
+
+.garantia__texto p:first-child {
+  font-size: 4rem;
+  line-height: 60px;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 1024px) {
